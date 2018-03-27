@@ -1,0 +1,172 @@
+#app{
+    width: 100%;
+    height: 100%;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.noMore{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+    width: auto;
+    height: auto;
+    overflow: auto;
+}
+.content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.none{
+	display: none;
+}
+
+.color999{
+	color: #999;
+}
+
+.color666{
+	color: #999;
+}
+
+.color333{
+	color: #333;
+}
+
+.colorred{
+	color: #f93069;
+}
+.color1{
+	color: #7E8B9E;
+}
+/*picker.js 字体大小*/
+.picker .picker-panel .wheel-wrapper{
+	background: #ededed;
+}
+.picker .picker-panel .wheel-wrapper .wheel{
+    font-size: 0.7rem;
+}
+.picker .picker-panel .picker-choose .cancel, .picker .picker-panel .picker-choose .confirm{
+	top: 0!important;
+	font-size: 0.8rem;
+}
+
+/*mint-ui 提示框字体颜色*/
+.toastStyle .mint-toast-text{
+	color: #fff;
+}
+.dibualert{
+	bottom: 100px!important;
+}
+/*弹出提示框*/
+#alertBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1113;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    transform: all 0.3 linear;
+}
+
+#alertBg .text{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+
+/*底部弹窗样式*/
+.alertBottom{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 110;
+}
+
+/*上下滑入滑出动画*/
+.fade-enter-active, .fade-leave-active {
+  	-webkit-transition: .2s ease-out;
+  	transition: .2s ease-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  	-webkit-transform: translate3d(0,100%,0);
+  	transform: translate3d(0,100%,0);
+}
+
+/*左右滑入滑出动画*/
+.fadeleft-enter-active, .fadeleft-leave-active {
+  	-webkit-transition: .2s ease-out;
+  	transition: .2s ease-out;
+}
+.fadeleft-enter, .fadeleft-leave-to /* .fade-leave-active in <2.1.8 */ {
+  	-webkit-transform: translate3d(-100%,0,0);
+  	transform: translate3d(-100%,0,0);
+}
+
+/*左右滑入滑出动画*/
+.faderight-enter-active, .faderight-leave-active {
+  	-webkit-transition: .2s ease-out;
+  	transition: .2s ease-out;
+}
+.faderight-enter, .faderight-leave-to /* .fade-leave-active in <2.1.8 */ {
+  	-webkit-transform: translate3d(100%,0,0);
+  	transform: translate3d(100%,0,0);
+}

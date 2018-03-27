@@ -1,0 +1,51 @@
+@import "../../assets/styles/scss/rem";
+#layout {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    #logo{
+        width: 180px;
+        height: 51px;
+        text-indent: 20px;
+        line-height: 50px;
+        background: #324157;
+        color: #f3f3f3;
+        // border-bottom: 1px solid #ababab;
+    }
+    .left-bar{
+        transition: width 0.28s ease-out;
+        width: 181px;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+        padding-bottom: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    // .left-bar::-webkit-scrollbar {
+    //     width: 0;
+    //     height: 0;
+    // }
+    .tabNav{
+        position: absolute;
+        top: 0;
+        left: 180px;
+        right: 0;
+        width: auto;
+        height: 50px;
+    }
+    .web-main{
+        position: absolute;
+        left: 180px;
+        top: 50px;
+        // top: 0;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        overflow: auto;
+    }
+}
